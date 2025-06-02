@@ -1,0 +1,15 @@
+// Item.jsx
+import { Link } from 'react-router-dom';
+
+const Item = ({ product }) => {
+  return (
+    <div>
+      <h3>{product.title}</h3>
+      <p>${product.price}</p>
+      <p>categoria: {product.category}</p>
+      <Link to={`/item/${product.id}`}>Ver detalle</Link>
+    </div>
+  );
+};
+
+export default Item;

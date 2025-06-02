@@ -47,3 +47,25 @@ body {
   .badge{
     position:absolute;
   }
+
+/* Submenu de categorias */
+.submenu {
+  position: relative;
+}
+
+.submenu-list {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  list-style: none;
+}
+
+.submenu:hover .submenu-list {
+  display: block;
+}
+
+.submenu-list li {
+  margin: 0.3rem 0;
+}
