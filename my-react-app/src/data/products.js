@@ -11,24 +11,25 @@ const products = [
   { id: '10', title: 'Mate Tradicional de Calabaza', category: 'tradicional', price: 7200, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Ryz2ZxQ9xV7FZhVSqDEYNhU2sDC7tihTqA&s' },
 ];
 
+const TiempoDeEspera = 1000; 
 
 export const getProducts = () =>
   new Promise(resolve => {
     setTimeout(() => {
       resolve(products);
-    }, 500);
+    }, TiempoDeEspera);
   });
 
 export const getProductById = (id) =>
   new Promise(resolve => {
     setTimeout(() => {
       resolve(products.find(prod => prod.id === id));
-    }, 500);
+    }, TiempoDeEspera);
   });
 
 export const getProductsByCategory = (category) =>
   new Promise(resolve => {
     setTimeout(() => {
       resolve(products.filter(prod => prod.category === category));
-    }, 500);
+    }, TiempoDeEspera);
   });
