@@ -28,6 +28,7 @@ git clone https://github.com/germansz10/TiendaMates-Sanchez.git
 2. Entrar a la carpeta del proyecto:
 
 cd TiendaMates-Sanchez
+
 3. Instalar dependencias:
 
 npm install
