@@ -3,18 +3,16 @@ import './NavBar.css';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
-
 const NavBar = () => {
   return (
     <nav className="navbar">
-    <div className='navbar-logo'><a href="/"><img className="logo" src={logo} alt='Logo de la tienda' /></a></div>
+      <div className='navbar-logo'>
+        <Link to="/"><img className="logo" src={logo} alt='Logo de la tienda' /></Link>
+      </div>
 
-    
-    
-    
       <ul>
-        <Link to="/">Inicio</Link>
-        
+        <li><Link to="/">Inicio</Link></li>
+
         <li className='submenu'>Productos
           <ul className='submenu-list'>
             <li><Link to="/category/imperial">Imperial</Link></li>
@@ -22,10 +20,13 @@ const NavBar = () => {
             <li><Link to="/category/tradicional">Tradicional</Link></li>
           </ul>
         </li>
-        
+
         <li>Contacto</li>
       </ul>
-      <CartWidget />
+
+      <Link to="/cart">
+        <CartWidget />
+      </Link>
     </nav>
   );
 };

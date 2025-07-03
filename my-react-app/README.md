@@ -1,12 +1,31 @@
-# React + Vite
+# 🛒 Tienda Mates
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto final del curso de React. Se trata de una tienda online de venta de mates con funcionalidad completa de carrito y generación de órdenes utilizando Firebase.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React JS
+- Vite
+- React Router DOM
+- Context API
+- Firebase (Firestore)
 
-## Expanding the ESLint configuration
+## ⚙️ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✔️ Listado de productos.  
+✔️ Filtro por categorías.  
+✔️ Detalle de cada producto.  
+✔️ Carrito de compras con sumatoria de productos y cantidades.  
+✔️ Checkout con formulario.  
+✔️ Generación de órdenes en Firebase Firestore.
+
+## 📁 Instalación y ejecución
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/germansz10/TiendaMates-Sanchez
+
+## Autor
+
+Creado por Germán 

@@ -31,11 +31,8 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div>
       <h2>{greeting}</h2>
-      {isLoading ? (
-        <p>Cargando productos...</p>
-      ) : (
-        <ItemList products={productList} />
-      )}
+      {isLoading ? (<p>Cargando productos...</p>) 
+      : (<ItemList products={productList} />)}
     </div>
   );
 };
